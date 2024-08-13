@@ -229,7 +229,7 @@ ul li a:hover {
 
 .skillspage{
     width: 100%;
-    background: url(img/bg.jpg) center center / cover no-repeat;
+    background: white;
     height: 100%;
     position: relative;
 }
