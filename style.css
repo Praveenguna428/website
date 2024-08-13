@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.main {
+    width: 100%;
+    background: url(img/bg.jpg) center center / cover no-repeat;
+    height: 100vh;
+    position: absolute;
+    font-family: sans-serif;
+
+}
+
+.navbar {
+    font-size: 22px;
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 160px;
+    cursor: pointer;
+    margin-top: -1%;
+    margin-left : -2%;
+}
+
+ul {
+    margin-top: -4%;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+    transition: .4s ease;
+}
+
+ul li a:hover {
+    color: red;
+}
+
+.profileimage {
+    width: 30%;
+    height: 45%;
+    position: absolute;
+    right: 100px;
+    bottom: -5;
+    opacity: 70px;
+}
+
+.profileimage img {
+    position: absolute;
+    height: 120%;
+    left: 40%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transition: left 4s ease;
+}
+
+.profileimage:hover .profile {
+    left: 55%;
+}
+
+.info {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.info h1 {
+    font-size: 78px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(36, 32, 30);
+    text-shadow: 0 0 1px black;
+}
+
+.info h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 38px;
+    margin-left: 0%;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-shadow: 0 0 1px black;
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36, 32, 30);
+    margin-left: 6%;
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: left 4s ease;
+}
+
+.info a:hover {
+    background: rgb(59, 174, 209);
+}
+
+
+.info span {
+    color: rgb(230, 104, 59);
+}
+
+
+
+.icons a {
+    margin-top: 3%;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.icons ion-icon {
+    margin-top: 1%;
+    margin-left: 6%;;
+    color: #000;
+    margin-right: -62px;
+    font-size: 40px;
+    transition: .4s ease;
+}
+
+.icons ion-icon:hover {
+    color: rgb(59, 174, 209);
+}
+
+.ABOUT {
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+.ABOUT h1{
+    font-size: 48px;
+    font-family:Georgia,serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 54px;
+    margin-bottom: 1%;
+    text-shadow: 0 0 1px black;
+}
+
+.ABOUT h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 34px;
+}
+
+.ABOUT span {
+    color: chocolate;
+}
+
+.educationpage {
+    width: 100%;
+    background: url(img/bg2.jpg) center center / cover no-repeat;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+    bottom: 0;
+    }
+    
+.EDUCATION {
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 48;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 64px;
+}
+
+
+.EDUCATION h1{
+    font-size: 48px;
+    font-family: Georgia,serif;
+    letter-spacing: 1px;
+    line-height: 64px;
+    text-shadow: 0 0 1px black;
+}
+
+.EDUCATION h2 li {
+    background-color: beige;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size:  25px;
+    margin-right: 65%;
+    text-align: left;
+    text-shadow: 0 0 1px black;
+    letter-spacing: normal;
+    list-style: 24px;
+}
+
+
+.EDUCATION h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 58 ;
+    margin-left: 5%;
+    margin-right: 8%;
+    letter-spacing: 1px;
+    line-height: 44px;
+}
+
+
+.EDUCATION span {
+    color: chocolate;
+}
+
+.skillspage{
+    width: 100%;
+    background: url(img/bg.jpg) center center / cover no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.skills {
+    margin-left: 5%;
+    margin-top: 0%;
+    text-align: center;
+    font-size: 48;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 64px;
+}
+
+
+.skills h1{
+    margin-left: 4%;
+    font-size: 48px;
+    font-family:Georgia,serif;
+    letter-spacing: 1px;
+    line-height: 64px;
+    text-shadow:0 0 1px black;
+}
+
+.skills h2{
+    margin-top: 2%;
+    margin-right: 6%;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow:0 0 1px black;
+    letter-spacing: normal;
+    list-style: 24px;
+}
+
+
+.skills span {
+    color: chocolate;
+}
+
+.skills p1 {
+    margin-left: 21%;
+    margin-top: 1%;
+    letter-spacing: 2px;
+}
+
+.skills p2 {
+    margin-left: 15%;
+    letter-spacing: 3px;
+}
+
+.certificationpage{
+    width: 100%;
+    background: url(https://images6.alphacoders.com/132/thumb-1920-1322314.jpeg) center center / cover no-repeat;
+    height: 165%;
+    position: relative;
+    font-family: sans-serif;
+
+}
+.certification {
+    margin-left: 5%;
+    margin-top: -3%;
+    text-align: left;
+    font-size: 48px; 
+    letter-spacing: 1px;
+    line-height: 64px;
+}
+
+.certification h1 {
+    margin-bottom: 3%;
+    margin-left: 4%;
+    text-align: left;
+    font-size: 48px;
+    color:black;
+    font-family: Georgia, serif;
+    letter-spacing: 1px;
+    line-height: 64px;
+    text-shadow: 0 0 2px black;
+}
+
+.certification p1 {
+    margin-left: 1%;
+    margin-top: 8%;
+    image-resolution: 100px;
+}
+
+
+.certification p2 {
+    margin-left: 1%;
+    margin-top: 8%;
+    image-resolution: 100px;
+}
+
+.certification p3 {
+    margin-left: 1%;
+    margin-top: 8%;
+    image-resolution: 100px;
+}
+.certification span {
+    color: chocolate;
+}
+
+
+.experiencepage{
+    width: 100%;
+    background: url(img/bg2.jpg) center center / cover no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.experience {
+    margin-left: 8%;
+    margin-top: 3%;
+    text-align: left;
+    font-size: 28px;
+    color: black;
+    font-family: Georgia, serif;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-shadow: 0 0 2px black;
+}
+
+.experience h3{
+    text-align:left;
+    margin-top:5%;
+    margin-left: 9% ;
+    margin-right: 68%;
+    position: relative;
+    font-family:'Times New Roman', Times, serif;
+    font-size:  35px;
+    text-shadow: 0 0 1px black;
+    letter-spacing: normal;
+    list-style: 24px;
+}
+
+.experience p{
+    margin-left:10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    letter-spacing: 1px;
+    line-height: 44px;
+}
+
+.experience img{
+    margin-top: 3%;
+    margin-left: 30%;
+}
+
+.experience span{
+    color: chocolate;
+}
+
+.experience p1{
+    margin-top: 5%;
+}
+
+
+
+.Contactmepage{
+    width: 100%;
+    background:CadetBlue;
+}
+
+.contactme h3{
+    text-align:center;
+    font-size: larger;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 1px black;
+}
+
+.contactme p{
+    text-align: center; 
+    font-size: large;
+    margin-top: 1%;
+}
+
+.contactme p:hover {
+    color: red;
+}
+
+.footer{
+    text-align: center;
+    font-size: larger;
+    margin-top: 3%;
+}
+
