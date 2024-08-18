@@ -28,6 +28,7 @@ body, html {
     justify-content: space-between;
 }
 
+
 .navbar .logo {
     width: 160px;
     cursor: pointer;
@@ -74,6 +75,7 @@ ul li a:hover {
     transform: translateX(-50%);
     bottom: 0;
     transition: left 4s ease;
+    text-shadow: 0 0 5px black;
 }
 
 .profileimage:hover .profile {
@@ -115,6 +117,8 @@ ul li a:hover {
 
 .info a:hover {
     background: rgb(59, 174, 209);
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
 
@@ -125,23 +129,22 @@ ul li a:hover {
 
 
 .icons a {
-    margin-top: 3%;
+    margin-top: 0%;
     text-decoration: none;
     color: #000;
     
 }
 
-.icons ion-icon {
+.icons img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+.icons a {
     margin-top: 1%;
     margin-left: 6%;;
     color: #000;
     margin-right: -62px;
-    font-size: 40px;
-    transition: .4s ease;
-}
-
-.icons ion-icon:hover {
-    color: rgb(59, 174, 209);
+    font-size: 60px;
 }
 
 .ABOUT {
@@ -149,9 +152,9 @@ ul li a:hover {
     margin-top: 6%;
 }
 
-.ABOUT h1{
+.ABOUT h1 {
     font-size: 48px;
-    font-family:Georgia,serif;
+    font-family: Georgia, serif;
     font-weight: bolder;
     letter-spacing: 1px;
     line-height: 54px;
@@ -159,16 +162,33 @@ ul li a:hover {
     text-shadow: 0 0 1px black;
 }
 
-.ABOUT h3{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.ABOUT h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
     letter-spacing: 0px;
-    line-height: 34px;
+    line-height: 24px;
+    margin-bottom: 1%; /* Added a bit of margin for spacing */
 }
 
 .ABOUT span {
     color: chocolate;
+    font-weight: bold;
+    text-decoration: underline;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ABOUT h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .ABOUT h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
 
 .educationpage {
     width: 100%;
@@ -225,14 +245,20 @@ ul li a:hover {
 
 .EDUCATION span {
     color: chocolate;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-.skillspage{
+.skillspage {
     width: 100%;
-    background:whitesmoke;
-    height: 100%;
+    background: url(https://github.com/Praveenguna428/website/blob/main/img/skill%20page%20bg.png?raw=true) center center / cover no-repeat;
+    height: auto; /* Adjusted to ensure the content defines the height */
+    min-height: 100vh; /* Ensures full viewport height */
     position: relative;
+    padding: 40px 20px;
+    font-family: 'Times New Roman', Times, serif; 
 }
+
 
 .skills {
     margin-left: 5%;
@@ -246,8 +272,8 @@ ul li a:hover {
 
 
 .skills h1{
-    margin-left: 4%;
-    font-size: 48px;
+    margin-left: 6%;
+    font-size: 50px;
     font-family:Georgia,serif;
     letter-spacing: 1px;
     line-height: 64px;
@@ -268,6 +294,8 @@ ul li a:hover {
 
 .skills span {
     color: chocolate;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .skills p1 {
@@ -281,14 +309,25 @@ ul li a:hover {
     letter-spacing: 3px;
 }
 
-.certificationpage{
-    width: 100%;
-    background: url(https://images6.alphacoders.com/132/thumb-1920-1322314.jpeg) center center / cover no-repeat;
-    height: 165%;
-    position: relative;
-    font-family: sans-serif;
 
+.certificationpage {
+    width: 100%;
+    background: url(https://github.com/Praveenguna428/website/blob/main/img/experience%20page%20bg.png?raw=true) center center / cover no-repeat;
+    height: auto; 
+    min-height: 100vh; 
+    position: relative;
+    font-family: 'Roboto', sans-serif; 
+    padding: 20px; 
+    color: #fff; 
 }
+
+.certification-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr)); 
+    gap: 30px; 
+    margin-top: 40px;
+}
+
 .certification {
     margin-left: 5%;
     margin-top: -3%;
@@ -296,6 +335,8 @@ ul li a:hover {
     font-size: 48px; 
     letter-spacing: 1px;
     line-height: 64px;
+    color: #fff; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .certification h1 {
@@ -304,116 +345,151 @@ ul li a:hover {
     text-align: left;
     font-size: 48px;
     color:black;
-    font-family: Georgia, serif;
+    font-family: 'Merriweather', Georgia, serif; 
     letter-spacing: 1px;
     line-height: 64px;
-    text-shadow: 0 0 2px black;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); 
 }
 
-.certification p1 {
+.certification p {
     margin-left: 1%;
-    margin-top: 8%;
-    image-resolution: 100px;
+    margin-top: 5%;
+    image-resolution: 100px; 
+    color: #ccc;   
 }
 
 
-.certification p2 {
-    margin-left: 1%;
-    margin-top: 8%;
-    image-resolution: 100px;
+.certification img:hover {
+    transform: scale(1.03); 
 }
 
-.certification p3 {
-    margin-left: 1%;
-    margin-top: 8%;
-    image-resolution: 100px;
-}
+
 .certification span {
     color: chocolate;
+    font-weight: bold;
+    font-size: 44px; 
+    text-decoration: underline;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .certification h1 {
+        font-size: 36px; 
+        line-height: 48px;
+    }
 
-.experiencepage{
-    width: 100%;
-    background: url(img/bg2.jpg) center center / cover no-repeat;
-    height: 100%;
-    position: relative;
+    .certification {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .certification-container {
+        grid-template-columns: 1fr; 
+    }
 }
+
 
 .experience {
-    margin-left: 8%;
-    margin-top: 3%;
+    margin: 3% 8%;
     text-align: left;
     font-size: 28px;
-    color: black;
-    font-family: Georgia, serif;
+    color: #333; 
+    font-family: 'Merriweather', Georgia, serif;
     letter-spacing: 1px;
-    line-height: 24px;
-    text-shadow: 0 0 2px black;
+    line-height: 1.5; 
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
 }
 
-.experience h3{
-    text-align:left;
-    margin-top:5%;
-    margin-left: 9% ;
-    margin-right: 68%;
+.experience:hover {
+    background-color: #f0f0f0; 
+    transform: scale(1.02); 
+}
+
+.experience h3 {
+    text-align: left;
+    margin: 2% 68% 0 9%;
     position: relative;
-    font-family:'Times New Roman', Times, serif;
-    font-size:  35px;
-    text-shadow: 0 0 1px black;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 35px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0.5, 0.2); 
     letter-spacing: normal;
-    list-style: 24px;
 }
 
-.experience p{
-    margin-left:10%;
-    margin-right: 10%;
-    margin-top: 3%;
+.experience p {
+    margin: 5% 10%;
     letter-spacing: 1px;
-    line-height: 44px;
+    line-height: 1.5; 
+    font-size: 22px;
+    color: #555; 
 }
 
-.experience img{
-    margin-top: 3%;
-    margin-left: 30%;
+.experience img {
+    display: block; 
+    margin: 20px auto; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.15);
+    transition: transform 0.3s ease; 
 }
 
-.experience span{
-    color: chocolate;
+.experience img:hover {
+    transform: scale(1.05); 
 }
 
-.experience p1{
-    margin-top: 5%;
+.experience span {
+    color: #d2691e;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: underline;
 }
 
 
 
-.Contactmepage{
+.Contactmepage {
     width: 100%;
-    background:CadetBlue;
+    background-color: CadetBlue;
+    padding: 20px 0;
 }
 
-.contactme h3{
-    text-align:center;
-    font-size: larger;
-    color:black;
+.contactme h3 {
+    text-align: center;
+    font-size: 2em;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 0 0 1px black;
+    margin-bottom: 20px;
 }
 
-.contactme p{
+.icons p {
     text-align: center; 
-    font-size: large;
-    margin-top: 1%;
+    font-size: 1.2em;
+    margin: 8px 0;
+    margin-left: -8%;
 }
 
-.contactme p:hover {
-    color: red;
+.icons p img {
+    margin: 0 4px;
+    transition: transform 0.3s, filter 0.3s;
 }
 
-.footer{
+.icons  img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+
+.footer {
     text-align: center;
-    font-size: larger;
-    margin-top: 3%;
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: black;
 }
+
 
