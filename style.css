@@ -647,14 +647,50 @@ ul li ul li a:hover {
     filter: brightness(1.2);
 }
 
-
 .footer {
     text-align: center;
     font-size: 1.2em;
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 10px;
+    padding: 20px;
     border-top: 1px solid #ccc;
     color: black;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.footer :hover {
+    color: white; 
+}
+
+
+
+.footer-nav ul {
+    margin: 32px 0;
+}
+
+.footer-nav ul li {
+    display:initial;
+    margin: 0 45px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: -2px;
+    font-size: 16px;
+}
+
+.footer-nav ul li a:hover {
+    color: black; 
+}
+
+.footer-note .logo{
+    align-items: center;
+    margin-top: -2px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+
 }
 
 
